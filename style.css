@@ -1,16 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #582c49;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  width: 400px;
+  width: 350px;
   margin: 50px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
+  background-color: #9f8d9e;
+  padding: 30px;
+  border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,16 +29,16 @@ input[type="text"] {
   width: 100%;
   padding: 8px;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  border: 1px solid #030303;
   margin-bottom: 10px;
 }
 
 button {
   padding: 8px 16px;
-  background-color: #4caf50;
+  background-color: #6f2b5f;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@ button {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #d599db;
   padding: 10px;
   border-top: 1px solid #ccc;
 }
@@ -70,10 +70,10 @@ button {
 }
 
 #sendButton {
-  background-color: #4caf50;
+  background-color: #6f2b5f;
   color: #fff;
   border: none;
   padding: 8px 16px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
