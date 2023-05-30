@@ -1,15 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #582c49;
+  background-color: #fec3c3;
   margin: 0;
   padding: 0;
 }
 
 .container {
   width: 350px;
-  margin: 50px auto;
-  background-color: #9f8d9e;
-  padding: 30px;
+  margin: 100px auto;
+  background-color: #d88686;
+  padding: 35px;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -29,13 +29,13 @@ input[type="text"] {
   width: 100%;
   padding: 8px;
   border-radius: 3px;
-  border: 1px solid #030303;
-  margin-bottom: 10px;
+  border: 1px solid #000000;
+  margin-bottom: 20px;
 }
 
 button {
-  padding: 8px 16px;
-  background-color: #6f2b5f;
+  padding: 10px 162px;
+  background-color: #660303;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -44,7 +44,7 @@ button {
 
 #predictionResult {
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 #chatbotContainer {
@@ -52,28 +52,28 @@ button {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #d599db;
-  padding: 10px;
+  background-color: #bd7c7c;
+  padding: 20px;
   border-top: 1px solid #ccc;
 }
 
 #chatbotMessages {
   max-height: 200px;
   overflow-y: scroll;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #userInput {
-  border: 1px solid #ccc;
+  border: 1px solid #1f1d1d;
   padding: 8px;
   border-radius: 3px;
 }
 
 #sendButton {
-  background-color: #6f2b5f;
+  background-color: #660303;
   color: #fff;
   border: none;
-  padding: 8px 16px;
+  padding: 9px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
