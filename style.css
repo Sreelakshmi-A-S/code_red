@@ -57,6 +57,17 @@ button {
   border-top: 1px solid #ccc;
 }
 
+#chatbotImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#chatbotImage {
+  width: 80px;
+  height: 80px;
+}
+
 #chatbotMessages {
   max-height: 200px;
   overflow-y: scroll;
