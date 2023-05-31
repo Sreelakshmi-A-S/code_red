@@ -3,26 +3,41 @@
 <head>
   <title>CodeRed - The Period Tracker</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+</head>
 </head>
 <body>
   <header>
     <h1>CodeRed - The Period Tracker</h1>
   </header>
 
-  <div class="container">
-    <form id="periodForm">
-      <label for="lastPeriod">Last Period Start Date:</label>
-      <input type="date" id="lastPeriod" required>
+    <div class="container">
+      <form id="periodForm">
+        <label for="lastPeriod">Last Period Start Date:</label>
+        <input type="date" id="lastPeriod" required>
+        <label for="cycleLength">Average Cycle Length (in days):</label>
+        <input type="number" id="cycleLength" required>
 
-      <label for="cycleLength">Average Cycle Length (in days):</label>
-      <input type="number" id="cycleLength" required>
+        <button type="submit">Predict</button>
+      </form>
 
-      <button type="submit">Predict</button>
-    </form>
-
-    <div id="predictionResult"></div>
-    <div id="calendar"></div>
-
+      <div id="predictionResult"></div>
+      <div id="calendar"></div>
+    </div>
+    <div id="additionalInfo">
+      <h2>Menstrual Health and Hygiene</h2>
+      <p>Here are some tips for maintaining menstrual health and hygiene:</p>
+      <ul>
+        <li>Change your sanitary pad or tampon every 4-6 hours.</li>
+        <li>Wash your hands before and after handling menstrual products.</li>
+        <li>Avoid using scented products, as they can cause irritation.</li>
+        <li>Practice proper genital hygiene during your period.</li>
+        <li>Dispose of used menstrual products properly.</li>
+        <li>Stay hydrated and eat a balanced diet to support overall health.</li>
+        <li>Exercise regularly to reduce menstrual cramps and improve mood.</li>
+      </ul>
+    </div>
+    
     <div id="chatbotContainer">
       <div id="chatbotImageContainer">
         <img src="chatbot.jpeg" alt="Chatbot" id="chatbotImage">
@@ -32,7 +47,37 @@
       <button type="button" id="sendButton">Send</button>
     </div>
   </div>
+  <!-- <div>
+  <footer>
+    <p>&copy; 2023 CodeRed - The Period Tracker. All rights reserved.</p>
+  </footer>
+  </div> -->
 
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>About CodeRed</h2>
+        <p>CodeRed is a period tracker website that aims to provide women with accurate predictions and helpful information about their menstrual cycles. Users can input their last period start date and average cycle length to get predictions for their next period.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Useful Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Predictions</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- <div class="footer-section">
+        <h2>Contact Information</h2>
+        <p>Email: info@codered.com</p>
+      </div> -->
+    </div>
+    <div class="footer-bottom">
+      <p> &copy; 2023 CodeRed - The Period Tracker. All rights reserved.</p>
+    </div>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
