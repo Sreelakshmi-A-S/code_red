@@ -91,3 +91,30 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+/* Rest of the CSS styles remain the same */
+
+#calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.day {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+
+.period {
+  background-color: #da5c5c;
+}
+
+.fertility {
+  background-color: #65b07e;
+}
