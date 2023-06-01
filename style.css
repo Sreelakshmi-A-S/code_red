@@ -1,5 +1,13 @@
+header {
+  background-color: #f69797;
+  padding: 15px;
+  text-align: center;
+}
+
 header h1 {
+  font-size: 40px;
   font-weight: bold;
+  color: #000000;
 }
 
 body {
@@ -7,6 +15,39 @@ body {
   background-color: #fec3c3;
   margin: 0;
   padding: 0;
+}
+
+.top-menu {
+  background-color: #dd5f5f;
+  padding: 20px;
+  
+}
+
+.top-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.top-menu li:last-child {
+  margin-right: 0;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.top-menu a:hover {
+  color: #000;
+  /* background-color: #141313; */
 }
 
 .container {
@@ -19,11 +60,12 @@ body {
 }
 
 .map-heading {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 h1, h2 {
-  color: #333;
+  color: #050505;
 }
 
 form {
@@ -157,14 +199,15 @@ button {
 
 #additionalInfo h2 {
   color: #000000;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 #additionalInfo p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   line-height: 1.5;
+  font-size: 20px;
 }
 
 #additionalInfo ul {
@@ -175,6 +218,7 @@ button {
 
 #additionalInfo li {
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .map-heading {
