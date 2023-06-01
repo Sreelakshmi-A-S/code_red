@@ -280,6 +280,20 @@ button {
   background-color: #c27878;
 }
 
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.about-section h2 {
+  font-weight: bold;
+}
+
+.about-section p {
+  margin-bottom: 15px;
+}
+
 footer {
   background-color: #000000;
   color: #ffffff;
