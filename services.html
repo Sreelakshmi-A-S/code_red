@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CodeRed - Services</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CodeRed - The Period Tracker</h1>
+    <nav class="top-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Prediction</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2>Period Predictor</h2>
+    <form id="periodForm">
+      <label for="lastPeriod">Last Period Start Date:</label>
+      <input type="date" id="lastPeriod" required>
+      <label for="cycleLength">Average Cycle Length (in days):</label>
+      <input type="number" id="cycleLength" required>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="predictionResult"></div>
+    <div id="calendar"></div>
+  </div>
+  
+  <footer class="page-footer">
+    <!-- Footer content -->
+    <p>Made with 🤍 &copy; 2023 CodeRed | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
