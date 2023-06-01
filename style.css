@@ -181,8 +181,38 @@ button {
   height: auto;
 }
 
+.faq-section {
+  max-width: 1250px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.faq {
+  border: 1px solid #0d0d0d;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color:#d59696;
+  transition: background-color 0.3s ease;
+}
+
+.faq h3 {
+  margin: 0;
+  color: #010101;
+}
+
+.faq p {
+  display: none;
+  color: #000000;
+}
+
+.faq.active {
+  background-color: #c27878;
+}
+
 footer {
-  background-color: #000;
+  background-color: #000000;
   color: #ffffff;
   padding: 20px;
 }
