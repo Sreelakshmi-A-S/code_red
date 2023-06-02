@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CodeRed - FAQ</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CodeRed - The Period Tracker</h1>
+    <nav class="top-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Prediction</a></li>
+        <li><a href="contact.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <h3>Qn 1: What are the common menstrual cycle lengths?</h3>
+      <p>Ans: The average menstrual cycle length ranges from 24 to 38 days, with 28 days being the most common.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Qn 2: How can I track my menstrual cycle?</h3>
+      <p>Ans: You can track your menstrual cycle by noting the start and end dates of your periods and calculating the average cycle length over several months.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Qn 3: Are there any natural remedies for menstrual cramps?</h3>
+      <p>Ans: Yes, some natural remedies for menstrual cramps include applying heat, taking over-the-counter pain relievers, and practicing relaxation techniques.</p>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <!-- Footer content -->
+    <p>Made with 🤍 &copy; 2023 CodeRed | All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Get all the FAQ elements
+    const faqElements = document.querySelectorAll('.faq');
+  
+    // Add click event listener to each FAQ element
+    faqElements.forEach(faqElement => {
+      const answerElement = faqElement.querySelector('p');
+  
+      faqElement.addEventListener('click', () => {
+      // Toggle the active class on the clicked FAQ element
+      faqElement.classList.toggle('active');       
+      // Toggle the display of the answer element
+      answerElement.style.display = answerElement.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+    </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
