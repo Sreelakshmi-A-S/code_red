@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     calendarContainer.innerHTML = calendar;
   }
-  
+   
   function isWithinRange(date, startDate, endDate) {
     return date >= startDate && date <= endDate;
   }
