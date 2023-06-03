@@ -182,13 +182,23 @@ button {
   font-weight: bold;
 } */
 
-.period {
+/* .period {
   background-color: #da5c5c;
 }
 
 .fertility {
   background-color: #65b07e;
+} */
+
+.period {
+  background-color: rgb(212, 40, 40);
+  color: white;
 }
+
+.fertility {
+  background-color: rgb(38, 114, 38);
+  color: white;
+} 
 
 #additionalInfo {
   margin-top: 20px;
