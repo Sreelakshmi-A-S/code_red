@@ -23,55 +23,138 @@ document.getElementById("periodForm").addEventListener("submit", function(event)
   displayChatbotResponse(chatbotResponse);
 });
 
-document.getElementById("sendButton").addEventListener("click", function() {
-  var userInput = document.getElementById("userInput").value;
-  displayUserMessage(userInput);
-  processUserInput(userInput);
-});
+// document.getElementById("sendButton").addEventListener("click", function() {
+//   var userInput = document.getElementById("userInput").value;
+//   displayUserMessage(userInput);
+//   processUserInput(userInput);
+// });
 
-function getChatbotResponse(cycleLength) {
-  var response = "";
+// function getChatbotResponse(cycleLength) {
+//   var response = "";
 
-  if (cycleLength < 21) {
-    response = "Your cycle length seems to be shorter than average. It's recommended to consult a doctor.";
-  } else if (cycleLength > 35) {
-    response = "Your cycle length seems to be longer than average. It's recommended to consult a doctor.";
-  } else {
-    response = "Your cycle length falls within the average range.";
+//   if (cycleLength < 21) {
+//     response = "Your cycle length seems to be shorter than average. It's recommended to consult a doctor.";
+//   } else if (cycleLength > 35) {
+//     response = "Your cycle length seems to be longer than average. It's recommended to consult a doctor.";
+//   } else {
+//     response = "Your cycle length falls within the average range.";
+//   }
+
+//   return response;
+// }
+
+// function displayChatbotResponse(response) {
+//   var chatbotContainer = document.createElement("div");
+//   chatbotContainer.classList.add("chatbot-message");
+//   chatbotContainer.innerText = "Chatbot: " + response;
+
+//   document.getElementById("chatbotMessages").appendChild(chatbotContainer);
+
+  
+//   document.getElementById("chatbotMessages").scrollTop = document.getElementById("chatbotMessages").scrollHeight;
+// }
+
+// function displayUserMessage(message) {
+//   var userContainer = document.createElement("div");
+//   userContainer.classList.add("user-message");
+//   userContainer.innerText = "User: " + message;
+
+//   document.getElementById("chatbotMessages").appendChild(userContainer);
+
+ 
+//   document.getElementById("chatbotMessages").scrollTop = document.getElementById("chatbotMessages").scrollHeight;
+// }
+
+// function processUserInput(userInput) {
+  
+//   var chatbotResponse = "Thank you for your message. How can I assist you?";
+//   displayChatbotResponse(chatbotResponse);
+// }
+
+// var chatbotMessages = document.getElementById("chatbotMessages");
+// var chatbotResponse = document.getElementById("chatbotResponse");
+
+// function displayMessage(message) {
+//   var messageElement = document.createElement("div");
+//   messageElement.textContent = message;
+//   chatbotMessages.appendChild(messageElement);
+// }
+
+// function displayResponse(response) {
+//   chatbotResponse.textContent = response;
+// }
+
+// function checkCycleLength() {
+//   var cycleLength = parseInt(prompt("Enter the cycle length:"));
+
+//   if (isNaN(cycleLength)) {
+//     displayResponse("Invalid input. Please enter a number.");
+//     return;
+//   }
+
+//   if (cycleLength < 21) {
+//     displayResponse("Your cycle length is shorter. It is recommended to visit a doctor.");
+//   } else if (cycleLength >= 21 && cycleLength <= 35) {
+//     displayResponse("Your cycle length is average.");
+//   } else {
+//     displayResponse("Your cycle length is long. It is recommended to visit a doctor.");
+//   }
+// }
+
+// checkCycleLength();
+
+// function getChatbotResponse(cycleLength) {
+//   var response = "";
+
+//   if (cycleLength < 21) {
+//     response = "Your cycle length seems to be shorter than average. It's recommended to consult a doctor.";
+//   } else if (cycleLength > 35) {
+//     response = "Your cycle length seems to be longer than average. It's recommended to consult a doctor.";
+//   } else {
+//     response = "Your cycle length falls within the average range.";
+//   }
+
+//   return response;
+// }
+
+var chatbotMessages = document.getElementById("chatbotMessages");
+var chatbotResponse = document.getElementById("chatbotResponse");
+
+function displayMessage(message) {
+  var messageElement = document.createElement("div");
+  messageElement.textContent = message;
+  chatbotMessages.appendChild(messageElement);
+}
+
+function displayResponse(response) {
+  chatbotResponse.textContent = response;
+}
+
+function greetUser() {
+  displayMessage("Welcome to CodeRed: The period tracker!");
+}
+
+function checkCycleLength() {
+  var cycleLength = parseInt(prompt("Enter the cycle length:"));
+
+  if (isNaN(cycleLength)) {
+    displayResponse("Invalid input. Please enter a number.");
+    return;
   }
 
-  return response;
+  if (cycleLength < 21) {
+    displayResponse("Your cycle length is shorter. It is recommended to visit a doctor.");
+  } else if (cycleLength >= 21 && cycleLength <= 35) {
+    displayResponse("Your cycle length is average.");
+  } else {
+    displayResponse("Your cycle length is long. It is recommended to visit a doctor.");
+  }
 }
 
-function displayChatbotResponse(response) {
-  var chatbotContainer = document.createElement("div");
-  chatbotContainer.classList.add("chatbot-message");
-  chatbotContainer.innerText = "Chatbot: " + response;
+// Call greetUser when the page loads
+greetUser();
 
-  document.getElementById("chatbotMessages").appendChild(chatbotContainer);
 
-  // Scroll to the bottom of chat messages
-  document.getElementById("chatbotMessages").scrollTop = document.getElementById("chatbotMessages").scrollHeight;
-}
-
-function displayUserMessage(message) {
-  var userContainer = document.createElement("div");
-  userContainer.classList.add("user-message");
-  userContainer.innerText = "User: " + message;
-
-  document.getElementById("chatbotMessages").appendChild(userContainer);
-
-  // Scroll to the bottom of chat messages
-  document.getElementById("chatbotMessages").scrollTop = document.getElementById("chatbotMessages").scrollHeight;
-}
-
-function processUserInput(userInput) {
-  // Here, you can implement the logic to handle different user queries and provide appropriate responses.
-  // For simplicity, let's provide a generic response in this example.
-
-  var chatbotResponse = "Thank you for your message. How can I assist you?";
-  displayChatbotResponse(chatbotResponse);
-}
 document.addEventListener("DOMContentLoaded", function() {
   var calendarContainer = document.getElementById("calendar");
   var periodForm = document.getElementById("periodForm");
