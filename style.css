@@ -1,5 +1,5 @@
 header {
-  background-color: #f69797;
+  background-color: #f6d1d1;
   padding: 15px;
   text-align: center;
 }
@@ -12,13 +12,13 @@ header h1 {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fec3c3;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
 .top-menu {
-  background-color: #dd5f5f;
+  background-color: #ffefef;
   padding: 20px;
   
 }
@@ -53,7 +53,7 @@ body {
 .container {
   width: 350px;
   margin: 0 auto;
-  background-color: #d88686;
+  background-color: #e9e2e2;
   padding: 35px;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -101,7 +101,7 @@ input[type="text"] {
 
 button {
   padding: 10px 162px;
-  background-color: #660303;
+  background-color: #8f8989;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -277,7 +277,7 @@ button {
 
 #additionalInfo {
   margin-top: 20px;
-  background-color: #c16a6a;
+  background-color: #d6b2b2;
   padding: 75px;
   border-radius: 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -348,7 +348,7 @@ button {
   padding: 20px;
   margin-bottom: 10px;
   cursor: pointer;
-  background-color:#d59696;
+  background-color:#dfd5d5;
   transition: background-color 0.3s ease;
 }
 
@@ -367,7 +367,7 @@ button {
 }
 
 .faq.active {
-  background-color: #c27878;
+  background-color: #e0c2c2;
 }
 
 .about-section {
@@ -400,7 +400,7 @@ footer {
 }
 
 .footer-section h2 {
-  color: #ad1616;
+  color: #ffb6b6;
 }
 
 .footer-section ul {
