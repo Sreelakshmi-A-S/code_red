@@ -96,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function() {
     periodEndDate.setDate(periodEndDate.getDate() + 3); // Three additional days
     return [periodStartDate, periodEndDate];
   }
-  
 
   function calculateFertilityDates(periodStartDate, periodEndDate) {
     var fertilityStartDate = new Date(periodStartDate);
@@ -105,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fertilityEndDate.setDate(fertilityEndDate.getDate() + 4); // End on the 13th day from predicted period date
     return [fertilityStartDate, fertilityEndDate];
   }
-
+  
   function renderCalendar(periodDates, fertilityDates) {
     var calendar = "";
   
